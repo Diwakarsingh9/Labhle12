@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapgh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:layout_gravity="bottom"
+            android:color= "#ffffff"
+            android:background="@drawable/minus"
+            android:id="@+id/button1"
+            android:alpha="0.70"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:color= "#ffffff"
+            android:background="#ffffff"
+            android:alpha="0.70"
+            android:id="@+id/textView"
+            android:text=""
+            android:textSize="30dp"
+            android:textColorHighlight="#000000"
+            android:textStyle="italic|bold"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:color= "#ffffff"
+          android:background="@drawable/km"
+            android:alpha="0.70"
+            />
+
+
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:color= "#ffffff"
+            android:alpha="0.70"
+            android:id="@+id/button2"
+            android:background="@drawable/plus"
+            android:textColor="#000000"
+            android:layout_gravity="bottom|center"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+</LinearLayout>

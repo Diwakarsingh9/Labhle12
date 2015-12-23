@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.saifi45.labhle.Gymnamefinder">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#7f1101"
+        android:id="@+id/searchbar"
+        android:gravity="left|center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedshape"
+        android:drawableLeft="@drawable/searchhhhhh"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#7f1101" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewgym"
+        android:layout_marginTop="10dp"
+        android:divider="#7f1101"
+        android:dividerHeight="1dp"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

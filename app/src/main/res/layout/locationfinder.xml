@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pb1"/>
+
+    <com.example.saifi45.labhle.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:id="@+id/listView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#7f1101" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_marginTop="10dp"
+        android:divider="#7f1101"
+        android:dividerHeight="1dp"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

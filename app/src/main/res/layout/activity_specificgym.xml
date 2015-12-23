@@ -1,0 +1,288 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gymname"
+            android:textStyle="bold|italic"
+            android:textColor="#7f1101"
+            android:layout_gravity="right|center_vertical"
+            android:hint="Gym&apos;s Name"
+            android:textSize="20dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gendernametobeprint"
+            android:layout_gravity="right|bottom"
+            android:textColor="#7f1101"
+            android:hint="Gender"
+            android:textSize="20dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idtext"
+            android:layout_gravity="center"
+            android:textColor="#7f1101"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#7f1101" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    >
+                    <com.pkmmte.view.CircularImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/trainersimagetobeprint1"
+                        android:src="@drawable/a"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/trainersnametobeprint11"
+                            android:textColorHint="#7f1101"
+                            android:singleLine="false"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#7f1101"
+                            android:hint="Trainer's Name 1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/trainerslastnametobeprint11"
+                            android:textColorHint="#7f1101"
+                            android:layout_marginTop="5dp"
+                            android:singleLine="false"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#7f1101"
+                            android:hint="Mobile No"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    >
+                    <com.pkmmte.view.CircularImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/trainerimagestobeprint2"
+                        android:src="@drawable/a"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/trainersnametobeprint22"
+                            android:textColorHint="#7f1101"
+                            android:singleLine="false"
+                            android:hint="Trainer's Name"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#7f1101"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/trainerslastnametobeprint222"
+                            android:textColorHint="#7f1101"
+                            android:singleLine="false"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#7f1101"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="Mobile No"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginTop="5dp"
+                android:background="#7f1101" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/add"
+                    android:id="@+id/imageView3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/addresstobeprint"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|center"
+                    android:textColor="#7f1101"
+                    android:text="Address" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#7f1101" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/phoneaaaa"
+                    android:id="@+id/imageView4"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/phonetobeprint"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|center"
+                    android:textColor="#7f1101"
+                    android:text="Phone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#7f1101" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView6"
+                        android:layout_marginLeft="5dp"
+                        android:text="Year of establishment - "
+                        android:textColor="#7f1101"
+                        android:gravity="left|center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/yeartobeprint"
+                        android:text="2008"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#7f1101"
+                        android:gravity="left|center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/aaaaaaaaaaaaaaaa"
+                        android:id="@+id/activity"
+                        android:gravity="right|center"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/sssssssssssss"
+                        android:id="@+id/sessions"
+                        android:gravity="right|center" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/specificgymviewpager"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

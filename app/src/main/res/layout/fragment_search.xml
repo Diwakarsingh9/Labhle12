@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ff26067f"
+        android:drawableLeft="@drawable/searchhhhhh"
+        android:text="Search Location"
+        android:gravity="left|center"
+        android:background="@drawable/roundedshape"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#ff26067f"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/searchhhhhh"
+        android:text="Search Gym's Name"
+        android:gravity="left|center"
+        android:background="@drawable/roundedshape"/>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/list_view11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp"
+            android:padding="12dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollingCache="false"
+            android:clipToPadding="false"
+            android:fadeScrollbars="true"
+            android:background="#ff9aaebc"
+            android:scrollbarStyle="outsideOverlay" />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
